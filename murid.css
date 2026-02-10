@@ -1,0 +1,124 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background: #f2f2f2;
+    padding: 40px;
+    color: #111;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: left;
+    border-left: 6px solid #111;
+    padding-left: 15px;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+/* ===== GRID CONTAINER ===== */
+.tasks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kotak per baris */
+    gap: 25px; /* jarak antar kotak */
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== TASK CARD ===== */
+.task {
+    display: block;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #111;
+    border: 2px solid #ddd;
+
+    /* Swiss typography: tegas, minimalis */
+    box-shadow: 0px 4px 0px #111;  
+    transition: 0.2s;
+}
+
+/* Hover effect */
+.task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 0px #111;
+}
+
+/* Judul pelajaran */
+.task h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Deadline text */
+.task p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* Status label */
+.status {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* ===== Warna Status ===== */
+.not-started .status {
+    background: #ff5555;
+    color: white;
+}
+
+.in-progress .status {
+    background: #ffcc00;
+    color: #111;
+}
+
+.done .status {
+    background: #3cb371;
+    color: white;
+}
+/* SUB NAVIGATION */
+.subnav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 30px auto;
+    max-width: 900px;
+    padding: 5px 5px;
+}
+
+.subnav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    font-size: 16px;
+    padding: 6px 10px;
+}
+
+.subnav .left {
+    text-align: left;
+}
+
+.subnav .right {
+    text-align: right;
+}

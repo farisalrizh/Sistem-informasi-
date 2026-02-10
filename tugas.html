@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekapan Tugas</title>
+    <link rel="stylesheet" href="tugas.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>REKAPAN TUGAS SISWA</h1>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav class="subnav">
+        <a class="left active" href="tugas.html">Tugas</a>
+        <a class="right" href="home.html">Beranda</a>
+    </nav>
+
+    <!-- RINGKASAN STATUS -->
+    <section class="summary">
+        <div class="sum-box red">
+            <h3>Belum Dikerjakan</h3>
+            <p>3 Tugas</p>
+        </div>
+
+        <div class="sum-box yellow">
+            <h3>Dalam Progres</h3>
+            <p>2 Tugas</p>
+        </div>
+
+        <div class="sum-box green">
+            <h3>Selesai</h3>
+            <p>5 Tugas</p>
+        </div>
+    </section>
+
+    <!-- TABEL REKAPAN -->
+    <section class="rekap-container">
+        <h2>Rekap Tugas</h2>
+
+        <table class="rekap-table">
+            <thead>
+                <tr>
+                    <th>Mata Pelajaran</th>
+                    <th>Judul Tugas</th>
+                    <th>Status</th>
+                    <th>Deadline</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Matematika</td>
+                    <td>Aljabar Dasar</td>
+                    <td><span class="st-belum">Belum</span></td>
+                    <td>12 Feb</td>
+                </tr>
+
+                <tr>
+                    <td>Bahasa Indonesia</td>
+                    <td>Teks Eksposisi</td>
+                    <td><span class="st-progres">Progres</span></td>
+                    <td>14 Feb</td>
+                </tr>
+
+                <tr>
+                    <td>PKN</td>
+                    <td>Hak & Kewajiban</td>
+                    <td><span class="st-belum">Belum</span></td>
+                    <td>19 Feb</td>
+                </tr>
+
+                <tr>
+                    <td>IPA</td>
+                    <td>Sistem Pencernaan</td>
+                    <td><span class="st-selesai">Selesai</span></td>
+                    <td>10 Feb</td>
+                </tr>
+
+                <tr>
+                    <td>Seni Budaya</td>
+                    <td>Poster Kebudayaan</td>
+                    <td><span class="st-selesai">Selesai</span></td>
+                    <td>09 Feb</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
